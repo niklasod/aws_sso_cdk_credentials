@@ -11,5 +11,6 @@ It gets the temporary credentials via a boto3 call and uses the sessionToken in 
 * Your sso cache folder is in the default location ([home]/.aws/sso/cache/)
 
 ## Usage
+* Backup your existing credentials file. This script appends to the exiting file and shouldn't mess anything up. But better safe than sorry
 * Install requirements by running pip install -r requirements.txt
 * Run the script: python configure-credentials.py --profile [your sso profile name]. Profile must exist in the current config file. 
